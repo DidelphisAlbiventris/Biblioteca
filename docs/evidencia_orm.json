@@ -1,0 +1,137 @@
+{
+  "retos": [
+    {
+      "reto": 1,
+      "resultado": {
+        "autor": "Autor de práctica",
+        "libro": "Libro creado desde el shell",
+        "copias": [
+          "PRACTICA-01",
+          "PRACTICA-02"
+        ]
+      }
+    },
+    {
+      "reto": 2,
+      "resultado": [
+        "Cien años de soledad",
+        "El amor en los tiempos del cólera"
+      ]
+    },
+    {
+      "reto": 3,
+      "resultado": [
+        "Código limpio"
+      ]
+    },
+    {
+      "reto": 4,
+      "resultado": [
+        "INV-002",
+        "INV-003",
+        "INV-005",
+        "INV-006",
+        "INV-008",
+        "PRACTICA-01",
+        "PRACTICA-02"
+      ]
+    },
+    {
+      "reto": 5,
+      "resultado": [
+        "Ana Torres",
+        "Luis Pérez",
+        "María Rojas"
+      ]
+    },
+    {
+      "reto": 6,
+      "resultado": [
+        {
+          "nombre": "Ana Torres",
+          "total_prestamos": 3
+        },
+        {
+          "nombre": "Luis Pérez",
+          "total_prestamos": 2
+        },
+        {
+          "nombre": "María Rojas",
+          "total_prestamos": 1
+        },
+        {
+          "nombre": "Pedro Gómez",
+          "total_prestamos": 0
+        }
+      ]
+    },
+    {
+      "reto": 7,
+      "resultado": {
+        "titulo": "Cien años de soledad",
+        "total_prestamos": 3
+      }
+    },
+    {
+      "reto": 8,
+      "resultado": [
+        "Pedro Gómez"
+      ]
+    },
+    {
+      "reto": 9,
+      "resultado": {
+        "ejemplar": "INV-001",
+        "fecha_devolucion": "2026-11-22",
+        "activo": false,
+        "disponible": true
+      }
+    },
+    {
+      "reto": 10,
+      "resultado": {
+        "autor_existe": false,
+        "libro_existe": true,
+        "autores_del_libro": [],
+        "copias_del_libro": 2
+      }
+    }
+  ],
+  "optimizacion": {
+    "prestamos": {
+      "registros": 6,
+      "prediccion_antes": 19,
+      "antes": 19,
+      "despues": 1,
+      "mismos_resultados": true
+    },
+    "libros_autores": {
+      "registros": 5,
+      "prediccion_antes": 6,
+      "antes": 6,
+      "despues": 2,
+      "mismos_resultados": true
+    }
+  },
+  "ejemplos_adicionales": {
+    "novela_o_ingenieria": [
+      "Arquitectura limpia",
+      "Cien años de soledad",
+      "Código limpio",
+      "El amor en los tiempos del cólera",
+      "La casa de los espíritus"
+    ],
+    "publicados_desde_2000": [
+      "Arquitectura limpia",
+      "Código limpio"
+    ],
+    "publicados_antes_2000": [
+      "Cien años de soledad",
+      "El amor en los tiempos del cólera",
+      "La casa de los espíritus"
+    ],
+    "prestamos_totales": {
+      "total": 6
+    }
+  }
+}
