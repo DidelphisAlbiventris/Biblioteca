@@ -19,10 +19,10 @@ SQLite se crea localmente al migrar; su versión depende de la instalación de P
 
 ### Desde cero en Windows / PowerShell
 
-Requisitos: Python y Git instalados. Sustituye `URL_DEL_REPOSITORIO_PUBLICO` por la dirección real del repositorio del grupo.
+Requisitos: Python y Git instalados. El repositorio público del grupo es [`DidelphisAlbiventris/Biblioteca`](https://github.com/DidelphisAlbiventris/Biblioteca).
 
 ```powershell
-git clone URL_DEL_REPOSITORIO_PUBLICO biblioteca-ufps
+git clone https://github.com/DidelphisAlbiventris/Biblioteca.git biblioteca-ufps
 cd biblioteca-ufps
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
@@ -37,7 +37,7 @@ Abre <http://127.0.0.1:8000/admin/> e ingresa con la cuenta que acabas de crear.
 ### Linux / macOS / Codespaces
 
 ```bash
-git clone URL_DEL_REPOSITORIO_PUBLICO biblioteca-ufps
+git clone https://github.com/DidelphisAlbiventris/Biblioteca.git biblioteca-ufps
 cd biblioteca-ufps
 python3 -m venv .venv
 source .venv/bin/activate
@@ -553,7 +553,8 @@ El grupo debe leer el código y completar sus datos y reflexiones personales ant
 
 ### Integrantes
 
-**Pendiente de completar por el grupo:** nombres completos de los integrantes. No se inventaron identidades ni se atribuyeron aportes a personas no identificadas.
+- **Cesar Hernan Salas** — código estudiantil `1152518`
+- **Johan Barrera** — código estudiantil `1152538`
 
 ### Reflexión técnica sobre esta implementación
 
@@ -566,10 +567,10 @@ El grupo debe leer el código y completar sus datos y reflexiones personales ant
 La implementación local no puede acreditar colaboración real de un grupo ni una entrega en NPLAD. Para completar esa parte del enunciado:
 
 1. Crear o utilizar **un repositorio público del grupo**, invitar a todos los integrantes y darles permiso de escritura.
-2. Completar los nombres en esta sección y sustituir la URL de clonación de la sección 3 por la URL real.
+2. Mantener los nombres y códigos del equipo en esta sección y conservar la URL de clonación del repositorio público.
 3. Conservar las migraciones, el código, el PDF, el README y las dependencias. Revisar `git status --ignored` para confirmar que no se agregan `.venv`, `db.sqlite3`, cachés ni secretos.
 4. Cada integrante debe realizar aportes reales y subir sus propios commits. No se simula ese historial con identidades ajenas.
 5. Subir la rama al repositorio público. Abrir su enlace en una ventana privada y confirmar que cualquiera pueda acceder.
-6. Registrar **el enlace al repositorio** en NPLAD antes de la fecha que publique el profesor.
+6. Registrar **https://github.com/DidelphisAlbiventris/Biblioteca** en NPLAD antes de la fecha que publique el profesor.
 
 La fecha límite no aparece en el PDF: se consulta en NPLAD. Los datos del equipo, la URL definitiva, la visibilidad pública y el historial de participación deben verificarse por el grupo antes de entregar.
