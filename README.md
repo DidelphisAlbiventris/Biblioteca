@@ -561,16 +561,3 @@ El grupo debe leer el código y completar sus datos y reflexiones personales ant
 1. **¿Qué cambió después de las primeras consultas y por qué?** Las consultas ejecutadas no exigieron cambiar las seis entidades. Sí orientaron la consulta de disponibilidad hacia una subconsulta de préstamos activos: una copia con historial devuelto y un préstamo activo no puede aparecer disponible. La medición también justificó cargar estudiante y libro con `select_related` y autores con `prefetch_related`. El campo `idioma` se añadió en una segunda migración para completar el ejercicio de evolución del esquema, no por un fallo de las consultas.
 2. **¿En qué se equivocó el agente con el diagrama y cómo se notó?** La comparación realizada no encontró una cardinalidad incorrecta en el diagrama final. Se verificaron las claves foráneas obligatorias, la M2M y la devolución nullable contra el código. Se documentó expresamente que el mínimo de autores exigido en formularios no es una restricción de cantidad de enlaces en la base. El grupo debe complementar esta respuesta si identifica otros cambios durante su revisión.
 3. **¿Qué decisión se defendería y cuál se cambiaría al empezar de nuevo?** Se defendería separar libro de ejemplar y proteger el historial con `PROTECT` y unicidad parcial: representan directamente el problema. Para una versión con necesidades adicionales se evaluaría guardar bajas lógicas de autores y estudiantes, en lugar de borrarlos físicamente, y modelar ediciones si la biblioteca necesita distinguir formatos de una misma obra. Esas extensiones no son requisitos de esta actividad.
-
-### Entrega en GitHub y NPLAD
-
-La implementación local no puede acreditar colaboración real de un grupo ni una entrega en NPLAD. Para completar esa parte del enunciado:
-
-1. Crear o utilizar **un repositorio público del grupo**, invitar a todos los integrantes y darles permiso de escritura.
-2. Mantener los nombres y códigos del equipo en esta sección y conservar la URL de clonación del repositorio público.
-3. Conservar las migraciones, el código, el PDF, el README y las dependencias. Revisar `git status --ignored` para confirmar que no se agregan `.venv`, `db.sqlite3`, cachés ni secretos.
-4. Cada integrante debe realizar aportes reales y subir sus propios commits. No se simula ese historial con identidades ajenas.
-5. Subir la rama al repositorio público. Abrir su enlace en una ventana privada y confirmar que cualquiera pueda acceder.
-6. Registrar **https://github.com/DidelphisAlbiventris/Biblioteca** en NPLAD antes de la fecha que publique el profesor.
-
-La fecha límite no aparece en el PDF: se consulta en NPLAD. Los datos del equipo, la URL definitiva, la visibilidad pública y el historial de participación deben verificarse por el grupo antes de entregar.
